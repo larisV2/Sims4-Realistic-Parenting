@@ -1,0 +1,28 @@
+name: Sims 4 Mod erstellen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.7-slim
+
+    steps:
+      - name: Dateien laden
+        uses: actions/checkout@v4
+
+      - name: Python-Version pruefen
+        run: python --version
+
+      - name: Mod kompilieren
+        run: python Realistic_Parenting_Online_ohne_Python/build.py
+
+      - name: Mod bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: RealisticParenting_Mod
+          path: Realistic_Parenting_Online_ohne_Python/RealisticParenting_v0_1_1.ts4script
+          if-no-files-found: error
