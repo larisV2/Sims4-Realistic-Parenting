@@ -1,0 +1,32 @@
+REALISTIC PARENTING - ONLINE ERSTELLEN, OHNE PYTHON AUF DEM PC
+
+Du brauchst: einen kostenlosen GitHub-Account und einen Browser.
+Keine Python-Installation. Keine .bat-Datei. Kein PowerShell-Skript.
+
+1) https://github.com/new besuchen. Ein neues Repository erstellen,
+   z. B. realistic-parenting-mod. Public oder Private nach Wunsch.
+   Am besten README beim Erstellen NICHT automatisch anlegen.
+2) ZIP auf deinem Computer entpacken.
+3) Im neuen GitHub-Repository 'Add file' -> 'Upload files' waehlen.
+   Alle entpackten Dateien UND den Ordner .github samt Unterordner
+   hochladen. Wichtig: Der Workflow muss als .github/workflows/build.yml
+   im Repository erscheinen. Falls GitHub einen Ordner nicht hochladen
+   kann: im Web unter 'Add file' -> 'Create new file' den Pfad
+   .github/workflows/build.yml angeben und den Text aus der Datei kopieren.
+4) 'Commit changes' auswaehlen.
+5) Im Repository auf 'Actions' klicken. Gegebenenfalls Actions aktivieren.
+   Auf 'Sims 4 Mod erstellen' -> letzten Lauf klicken.
+6) Nach erfolgreichem Lauf unter 'Artifacts' das Archiv
+   RealisticParenting_Installierbar herunterladen und entpacken.
+7) NUR RealisticParenting_v0_1_1.ts4script in
+   Dokumente/Electronic Arts/Die Sims 4/Mods kopieren.
+   Alte RealisticParenting_v0_1.ts4script zuvor entfernen.
+8) Spiel vollstaendig neu starten, Script Mods aktivieren,
+   Haushalt im Live-Modus laden, Strg+Shift+C -> parenting.help.
+
+WICHTIG:
+Dies erzeugt kompilierten Python-3.7-Bytecode fuer Die Sims 4.
+Die Mod wurde noch nicht im laufenden Spiel getestet.
+Es handelt sich um einen Konsolen-Prototypen, keine fertige grosse Mod.
+Die Werte bleiben nur waehrend einer Spielsitzung gespeichert.
+Vor dem Test Spielstand sichern.
